@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>test_184.tml</DOCID>
+<DCT><TIMEX3 tid="t0" type="DATE" value="2014-01-23" temporalFunction="false" functionInDocument="CREATION_TIME">2014-01-23</TIMEX3></DCT>
+<TEXT>
+Ride the Year of the Horse on 21-23 Feb with Gahl Eden Sasson at Pure Yoga Ngee Ann City! http://t.co/TBmQdxOX9V http://t.co/aVQrMG9uwk
+</TEXT>
+</TimeML>

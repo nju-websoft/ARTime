@@ -1,0 +1,38 @@
+<?xml version="1.0" ?><TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>AP_20130322</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="2013-03-22">March 22, 2013</TIMEX3></DCT>
+
+<TITLE>105 U.S. Kids Died From Flu, CDC Says</TITLE>
+
+
+
+<TEXT>
+
+The flu <EVENT class="OCCURRENCE" eid="e1000028">season</EVENT> is winding down, and it has <EVENT class="OCCURRENCE" eid="e2">killed</EVENT> 105 children so far - about the average toll.
+
+The season <EVENT class="ASPECTUAL" eid="e3">started</EVENT> about <TIMEX3 tid="t1" type="DURATION" value="P1M">a month</TIMEX3> earlier than usual, <EVENT class="ASPECTUAL" eid="e4">sparking</EVENT> concerns it might <EVENT class="OCCURRENCE" eid="e5">turn</EVENT> into the worst in <TIMEX3 type="DURATION" value="P10Y" tid="t1000">a decade</TIMEX3>. It <EVENT class="ASPECTUAL" eid="e6">ended</EVENT> up being very hard on the elderly, but was moderately severe overall, <EVENT class="REPORTING" eid="e7">according</EVENT> to the Centers for Disease Control and Prevention.
+
+Six of the pediatric <EVENT class="OCCURRENCE" eid="e1000030">deaths</EVENT> were <EVENT class="REPORTING" eid="e8">reported</EVENT> in <TIMEX3 tid="t2" type="DATE" value="2013-W11">the last week</TIMEX3>, and it's possible there will be more, <EVENT class="REPORTING" eid="e9">said</EVENT> the CDC's Dr. Michael Jhung <EVENT class="REPORTING" eid="e10">said</EVENT> <TIMEX3 tid="t3" type="DATE" value="2013-03-22">Friday</TIMEX3>.
+
+Roughly 100 children <EVENT class="OCCURRENCE" eid="e11">die</EVENT> in an average flu season. One exception was the swine flu <EVENT class="OCCURRENCE" eid="e1000032">pandemic</EVENT> of <TIMEX3 tid="t4" type="DATE" value="2009">2009</TIMEX3>-<TIMEX3 tid="t2000" type="DATE" value="2010">2010</TIMEX3>, when 348 children <EVENT class="OCCURRENCE" eid="e12">died</EVENT>.
+
+The CDC <EVENT class="I_ACTION" eid="e13">recommends</EVENT> that all children ages 6 months and older be <EVENT class="OCCURRENCE" eid="e2001">vaccinated</EVENT> against flu <TIMEX3 tid="t5" type="SET" value="XXXX-WI">each season</TIMEX3>, though only about half get a flu shot or nasal spray.
+
+All but four of the children who <EVENT class="OCCURRENCE" eid="e16">died</EVENT> were old enough to be <EVENT class="OCCURRENCE" eid="e17">vaccinated</EVENT>, but 90 percent of them did not get <EVENT class="OCCURRENCE" eid="e19">vaccinated</EVENT>, CDC officials <EVENT class="REPORTING" eid="e20">said</EVENT>.
+
+<TIMEX3 tid="t6" type="DATE" value="XXXX-WI">This year</TIMEX3>'s vaccine was <EVENT class="I_STATE" eid="e21">considered</EVENT> effective in children, though it didn't <EVENT class="OCCURRENCE" eid="e22">work</EVENT> very well in older people. And the dominant flu strain early in the <EVENT eid="e2002" class="OCCURRENCE">season</EVENT> was one that tends to cause more severe illness.
+
+The government only does a national flu death count for children. But it does track hospitalization rates for people 65 and older, and those statistics have been <EVENT class="STATE" eid="e1000033">grim</EVENT>.
+
+In that group, 177 out of every 100,000 were <EVENT class="OCCURRENCE" eid="e26">hospitalized</EVENT> with flu-related illness in <TIMEX3 tid="t8" type="DURATION" value="PXM">the past several months</TIMEX3>. That's more than 2 1/2 times higher than any other <TIMEX3 tid="t2001" type="SET" value="XXXX-WI">recent season</TIMEX3>.
+
+This flu <EVENT class="OCCURRENCE" eid="e2003">season</EVENT> <EVENT class="ASPECTUAL" eid="e27">started</EVENT> in <TIMEX3 tid="t9" type="DATE" value="2012-12" mod="START">early December</TIMEX3>, <TIMEX3 tid="t10" type="DURATION" value="P1M">a month</TIMEX3> earlier than usual, and <EVENT class="OCCURRENCE" eid="e1000035">peaked</EVENT> by <TIMEX3 tid="t11" type="DATE" value="2012" mod="END">the end of year</TIMEX3>. Since then, flu reports have been <EVENT class="OCCURRENCE" eid="e28">dropping</EVENT> off throughout the country.
+
+"We <EVENT class="PERCEPTION" eid="e29">appear</EVENT> to be <EVENT class="OCCURRENCE" eid="e30">getting</EVENT> close to the end of flu <EVENT eid="e2004" class="OCCURRENCE">season</EVENT>," Jhung <EVENT class="REPORTING" eid="e31">said</EVENT>.
+
+</TEXT>
+
+
+</TimeML>

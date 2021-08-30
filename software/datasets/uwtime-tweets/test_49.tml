@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>test_49.tml</DOCID>
+<DCT><TIMEX3 tid="t0" type="DATE" value="2015-03-29" temporalFunction="false" functionInDocument="CREATION_TIME">2015-03-29</TIMEX3></DCT>
+<TEXT>
+We would like to inform you that our office will be closed for <TIMEX3 tid="t1" type="TIME" value="2015-03-30TMO">the morning of 30 March 2015</TIMEX3>. Business resumes at 2pm.
+</TEXT>
+</TimeML>

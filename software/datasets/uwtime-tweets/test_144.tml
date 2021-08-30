@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>test_144.tml</DOCID>
+<DCT><TIMEX3 tid="t0" type="DATE" value="2015-02-02" temporalFunction="false" functionInDocument="CREATION_TIME">2015-02-02</TIMEX3></DCT>
+<TEXT>
+Are you planning to give your house a new look as you usher in the year of goat? Before that, did you know that... http://t.co/yQuESUluhf
+</TEXT>
+</TimeML>

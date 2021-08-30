@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>test_60.tml</DOCID>
+<DCT><TIMEX3 tid="t0" type="DATE" value="2013-09-12" temporalFunction="false" functionInDocument="CREATION_TIME">2013-09-12</TIMEX3></DCT>
+<TEXT>
+Hi @priscillatan! Glad that you had a rejuvenating yoga session <TIMEX3 tid="t1" type="DURATION" value="P2D" mod="MORE_THAN">over the weekends</TIMEX3>! Here's wishing you an equally good one in advanced! :)
+</TEXT>
+</TimeML>

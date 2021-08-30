@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>test_126.tml</DOCID>
+<DCT><TIMEX3 tid="t0" type="DATE" value="2013-12-14" temporalFunction="false" functionInDocument="CREATION_TIME">2013-12-14</TIMEX3></DCT>
+<TEXT>
+@K_ennyNG work ended at <TIMEX3 tid="t1" type="TIME" value="2013-12-14T11:30">11:30</TIMEX3> then got stuck at cadelcott for 1hr cuz no taxi
+</TEXT>
+</TimeML>

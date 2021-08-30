@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>test_136.tml</DOCID>
+<DCT><TIMEX3 tid="t0" type="DATE" value="2013-02-19" temporalFunction="false" functionInDocument="CREATION_TIME">2013-02-19</TIMEX3></DCT>
+<TEXT>
+Join Rene Andre Ekeheien for <TIMEX3 tid="t1" type="DURATION" value="P30D">a 30-day</TIMEX3> hot classic yoga challenge. 13 Apr - <TIMEX3 tid="t2" type="DATE" value="2013-05-12">12 May</TIMEX3> at Pure Yoga Chevron House. http://t.co/byMDOWTX
+</TEXT>
+</TimeML>

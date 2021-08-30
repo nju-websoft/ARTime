@@ -1,0 +1,85 @@
+text	result	texPattern	valuePattern	form
+###	duration_r1
+less_than sixty days	P60D	INEQ NUM:$0 TIME_UNIT:$1	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+less_than sixty-days	P60D	INEQ NUM:$0 - TIME_UNIT:$1	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+less_than sixty more days	P60D	INEQ NUM:$0 more TIME_UNIT:$1	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+sixty more days	P60D	NUM:$0 more TIME_UNIT:$1	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+the sixty days	P60D	the NUM:$0 TIME_UNIT:$1	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+the sixty-days	P60D	the NUM:$0 - TIME_UNIT:$1	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+the sixty more days	P60D	the NUM:$0 more TIME_UNIT:$1	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+several days	PXD	several TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+a couple of days	PXD	a_couple_of TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+some days	PXD	some TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+many days	PXD	many TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+a few months	PXM	a_few TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+over several days	PXD	INEQ several TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+less than a couple of months	PXM	INEQ a_couple_of TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+over some days	PXD	INEQ some TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+over many days	PXD	INEQ many TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+over a few months	PXM	INEQ a_few TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+###	duration_r2
+the last twenty years	P20Y	the LAST NUM:$0 TIME_UNIT:$1	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+the next twenty years	P20Y	the NEXT NUM:$0 TIME_UNIT:$1	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+the current twenty years	P20Y	the THIS NUM:$0 TIME_UNIT:$1	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+at_least the last twenty years	P20Y	INEQ the LAST NUM:$0 TIME_UNIT:$1	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+at_least the next twenty years	P20Y	INEQ the NEXT NUM:$0 TIME_UNIT:$1	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+at_least the current twenty years	P20Y	INEQ the THIS NUM:$0 TIME_UNIT:$1	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+the last twenty years or so	P20Y	the LAST NUM:$0 TIME_UNIT:$1 or so	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+the next twenty years or so	P20Y	the NEXT NUM:$0 TIME_UNIT:$1 or so	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+the current twenty years or so	P20Y	the THIS NUM:$0 TIME_UNIT:$1 or so	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+at_least the last twenty years or so	P20Y	INEQ the LAST NUM:$0 TIME_UNIT:$1 or so	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+at_least the next twenty years or so	P20Y	INEQ the NEXT NUM:$0 TIME_UNIT:$1 or so	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+at_least the current twenty years or so	P20Y	INEQ the THIS NUM:$0 TIME_UNIT:$1 or so	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+the last several years	PXY	the LAST several TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+at least the last several years	PXY	INEQ the LAST several TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+the last several years or so	PXY	the LAST several TIME_UNIT:$0 or so	Action:AddTo Value:X TimeUnit:$0	DURATION
+at least the last several years or so	PXY	INEQ the LAST several TIME_UNIT:$0 or so	Action:AddTo Value:X TimeUnit:$0	DURATION
+the last couple of years	PXY	the LAST couple of TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+at least the last couple of years	PXY	INEQ the LAST couple of TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+the last couple of years or so	PXY	the LAST couple of TIME_UNIT:$0 or so	Action:AddTo Value:X TimeUnit:$0	DURATION
+at least the last couple of years or so	PXY	INEQ the LAST couple of TIME_UNIT:$0 or so	Action:AddTo Value:X TimeUnit:$0	DURATION
+the last few years	PXY	the LAST few TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+at least the last few years	PXY	INEQ the LAST few TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+the last few years or so	PXY	the LAST few TIME_UNIT:$0 or so	Action:AddTo Value:X TimeUnit:$0	DURATION
+at least the last few years or so	PXY	INEQ the LAST few TIME_UNIT:$0 or so	Action:AddTo Value:X TimeUnit:$0	DURATION
+the next several years	PXY	the NEXT several TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+at least the next several years	PXY	INEQ the NEXT several TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+the next several years or so	PXY	the NEXT several TIME_UNIT:$0 or so	Action:AddTo Value:X TimeUnit:$0	DURATION
+at least the next several years or so	PXY	INEQ the NEXT several TIME_UNIT:$0 or so	Action:AddTo Value:X TimeUnit:$0	DURATION
+the next couple of years	PXY	the NEXT couple of TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+at least the next couple of years	PXY	INEQ the NEXT couple of TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+the next couple of years or so	PXY	the NEXT couple of TIME_UNIT:$0 or so	Action:AddTo Value:X TimeUnit:$0	DURATION
+at least the next couple of years or so	PXY	INEQ the NEXT couple of TIME_UNIT:$0 or so	Action:AddTo Value:X TimeUnit:$0	DURATION
+the next few years	PXY	the NEXT few TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+at least the next few years	PXY	INEQ the NEXT few TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+the next few years or so	PXY	the NEXT few TIME_UNIT:$0 or so	Action:AddTo Value:X TimeUnit:$0	DURATION
+at least the next few years or so	PXY	INEQ the NEXT few TIME_UNIT:$0 or so	Action:AddTo Value:X TimeUnit:$0	DURATION
+the current several years	PXY	the THIS several TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+at least the current several years	PXY	INEQ the THIS several TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+the current several years or so	PXY	the THIS several TIME_UNIT:$0 or so	Action:AddTo Value:X TimeUnit:$0	DURATION
+at least the current several years or so	PXY	INEQ the THIS several TIME_UNIT:$0 or so	Action:AddTo Value:X TimeUnit:$0	DURATION
+the current couple of years	PXY	the THIS couple of TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+at least the current couple of years	PXY	INEQ the THIS couple of TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+the current couple of years or so	PXY	the THIS couple of TIME_UNIT:$0 or so	Action:AddTo Value:X TimeUnit:$0	DURATION
+at least the current couple of years or so	PXY	INEQ the THIS couple of TIME_UNIT:$0 or so	Action:AddTo Value:X TimeUnit:$0	DURATION
+the current few years	PXY	the THIS few TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+at least the current few years	PXY	INEQ the THIS few TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION
+the current few years or so	PXY	the THIS few TIME_UNIT:$0 or so	Action:AddTo Value:X TimeUnit:$0	DURATION
+at least the current few years or so	PXY	INEQ the THIS few TIME_UNIT:$0 or so	Action:AddTo Value:X TimeUnit:$0	DURATION
+###	duration_r3
+three year term	P3Y	NUM:$0 TIME_UNIT:$1 term	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+the three year term	P3Y	the NUM:$0 TIME_UNIT:$1 term	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+a three year term	P3Y	1 NUM:$0 TIME_UNIT:$1 term	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+three year period	P3Y	NUM:$0 TIME_UNIT:$1 period	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+the three year period	P3Y	the NUM:$0 TIME_UNIT:$1 period	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+a three year period	P3Y	1 NUM:$0 TIME_UNIT:$1 period	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+three-year term	P3Y	NUM:$0 - TIME_UNIT:$1 term	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+the three-year term	P3Y	the NUM:$0 - TIME_UNIT:$1 term	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+a three-year term	P3Y	1 NUM:$0 - TIME_UNIT:$1 term	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+three-year period	P3Y	NUM:$0 - TIME_UNIT:$1 period	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+the three-year period	P3Y	the NUM:$0 - TIME_UNIT:$1 period	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+a three-year period	P3Y	1 NUM:$0 - TIME_UNIT:$1 period	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+###	duration_r4
+an hour after	PT1H	NUM:$0 TIME_UNIT:$1 after	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+###	duration_customized
+years	PXY	TIME_UNIT:$0	Action:AddTo Value:X TimeUnit:$0	DURATION

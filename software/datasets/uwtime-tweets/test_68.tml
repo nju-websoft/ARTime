@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>test_68.tml</DOCID>
+<DCT><TIMEX3 tid="t0" type="DATE" value="2014-10-30" temporalFunction="false" functionInDocument="CREATION_TIME">2014-10-30</TIMEX3></DCT>
+<TEXT>
+SEC-Sky Creation Design Environmental Blogger of the Year, Stella Paul from India receiving the award from Ms... http://t.co/Ad6Beghs34
+</TEXT>
+</TimeML>

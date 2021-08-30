@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>test_132.tml</DOCID>
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="2014-11-22">2014-11-22</TIMEX3></DCT>
+<TEXT>
+NYP photoshoot pics are up on NYP'S choices <TIMEX3 tid="t1" type="SET" value="P1Y">annual</TIMEX3> magazine! Come and join NYP for an exciting campus... <TIMEX3 tid="t2" type="TIME" value="2014-11-22T15:00">http://t.co/R3Pm2136aD</TIMEX3>
+</TEXT>
+</TimeML>

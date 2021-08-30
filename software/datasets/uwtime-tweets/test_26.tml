@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>test_26.tml</DOCID>
+<DCT><TIMEX3 tid="t0" type="DATE" value="2014-01-23" temporalFunction="false" functionInDocument="CREATION_TIME">2014-01-23</TIMEX3></DCT>
+<TEXT>
+Kick start <TIMEX3 tid="t1" type="DATE" value="2014">2014</TIMEX3> with Michael Sutton for Locks and Binds on 26 Jan at Pure Yoga Chevron House! http://t.co/uAuZKhAUcY http://t.co/4iCLsaTYf0
+</TEXT>
+</TimeML>

@@ -1,0 +1,361 @@
+text	result	texPattern	valuePattern	form
+###	history rules
+###	historic dates; year granularity (no AD / BC hints)
+year of 90	2190	TIME_UNIT:$1 of NUM:$0	Action:BasicModify Value:$0 TimeUnit:$1 TimeUnit:Century	POINT
+the year of 90	2190	the TIME_UNIT:$1 of NUM:$0	Action:BasicModify Value:$0 TimeUnit:Year TimeUnit:Century	POINT
+90	2190	NUM:$0	Action:BasicModify Value:$0 TimeUnit:Year TimeUnit:Century	POINT
+190	0190	NUM:$0	Action:BasicModify Value:$0 TimeUnit:Year	POINT
+year of 190	0190	TIME_UNIT:$1 of NUM:$0	Action:BasicModify Value:$0 TimeUnit:Year	POINT
+the year of 190	0190	the TIME_UNIT:$1 of NUM:$0	Action:BasicModify Value:$0 TimeUnit:Year	POINT
+###	day granularity
+###	date_r0
+2010-01-29	2010-01-29	YEAR:$0 - NUM:$1 - NUM:$2	Action:BasicModify Value:$0 TimeUnit:Year Action:BasicModify Value:$1 TimeUnit:Month Action:BasicModify Value:$2 TimeUnit:Day	POINT
+10-29-99	2199-10-29	NUM:$1 - NUM:$2 - NUM:$0	Action:BasicModify Value:$0 TimeUnit:Year TimeUnit:Century Action:BasicModify Value:$1 TimeUnit:Month Action:BasicModify Value:$2 TimeUnit:Day	POINT
+09/26/1999	1999-09-26	NUM:$1 / NUM:$2 / YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:BasicModify Value:$1 TimeUnit:Month Action:BasicModify Value:$2 TimeUnit:Day	POINT
+09/26/99	2199-09-26	NUM:$1 / NUM:$2 / NUM:$0	Action:BasicModify Value:$0 TimeUnit:Year TimeUnit:Century Action:BasicModify Value:$1 TimeUnit:Month Action:BasicModify Value:$2 TimeUnit:Day	POINT
+1.3.99	2199-03-01	NUM:$2 . NUM:$1 . NUM:$0	Action:BasicModify Value:$0 TimeUnit:Year TimeUnit:Century Action:BasicModify Value:$1 TimeUnit:Month Action:BasicModify Value:$2 TimeUnit:Day	POINT
+1.3.1999	1999-03-01	NUM:$2 . NUM:$1 . YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:BasicModify Value:$1 TimeUnit:Month Action:BasicModify Value:$2 TimeUnit:Day	POINT
+###	date_r1
+February 25, 2009	2009-02-25	MONTH:$1 NUM:$2 , YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+February 25 2009	2009-02-25	MONTH:$1 NUM:$2 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+February 25, 2009, Monday	2009-02-25	MONTH:$1 NUM:$2 , YEAR:$0 , Monday	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+February 25 2009, Monday	2009-02-25	MONTH:$1 NUM:$2 YEAR:$0 , Monday	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+February 25th, 2009	2009-02-25	MONTH:$1 ORD:$2 , YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+February 25th 2009	2009-02-25	MONTH:$1 ORD:$2 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+February 25th, 2009, Monday	2009-02-25	MONTH:$1 ORD:$2 , YEAR:$0 , Monday	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+February 25th 2009, Monday	2009-02-25	MONTH:$1 ORD:$2 YEAR:$0 , Monday	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+25 February 2009	2009-02-25	NUM:$2 MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+25th February 2009	2009-02-25	ORD:$2 MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+25 February, 2009	2009-02-25	NUM:$2 MONTH:$1 , YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+25th February, 2009	2009-02-25	ORD:$2 MONTH:$1 , YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+the 25 February 2009	2009-02-25	the NUM:$2 MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+the 25th February 2009	2009-02-25	the ORD:$2 MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+the 25 February, 2009	2009-02-25	the NUM:$2 MONTH:$1 , YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+the 25th February, 2009	2009-02-25	the ORD:$2 MONTH:$1 , YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+25 of February 2009	2009-02-25	NUM:$2 of MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+25th of February 2009	2009-02-25	ORD:$2 of MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+the 25 of February 2009	2009-02-25	the NUM:$2 of MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+the 25th of February 2009	2009-02-25	the ORD:$2 of MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+###	date_r2
+November 19	2121-11-19	MONTH:$0 NUM:$1	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+January 19th	2121-01-19	MONTH:$0 ORD:$1	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+19 November	2121-11-19	NUM:$1 MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+19 of November	2121-11-19	NUM:$1 of MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+19th November	2121-11-19	ORD:$1 MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+19th of November	2121-11-19	ORD:$1 of MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+the 19 November	2121-11-19	the NUM:$1 MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+the 19 of November	2121-11-19	the NUM:$1 of MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+the 19th November	2121-11-19	the ORD:$1 MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+the 19th of November	2121-11-19	the ORD:$1 of MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+January 19th of that year	2121-01-19	MONTH:$0 ORD:$1 of that year	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+January 19th of the same year	2121-01-19	MONTH:$0 ORD:$1 of the same year	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+January 19 of that year	2121-01-19	MONTH:$0 NUM:$1 of that year	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+January 19 of the same year	2121-01-19	MONTH:$0 NUM:$1 of the same year	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+19 January of the same year	2121-01-19	NUM:$1 MONTH:$0 of the same year	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+19 January of that year	2121-01-19	NUM:$1 MONTH:$0 of that year	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+19th January of the same year	2121-01-19	ORD:$1 MONTH:$0 of the same year	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+19th January of that year	2121-01-19	ORD:$1 MONTH:$0 of that year	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+19 of January of the same year	2121-01-19	NUM:$1 of MONTH:$0 of the same year	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+19 of January of that year	2121-01-19	NUM:$1 of MONTH:$0 of that year	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+19th of January of the same year	2121-01-19	ORD:$1 of MONTH:$0 of the same year	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+19th of January of that year	2121-01-19	ORD:$1 of MONTH:$0 of that year	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+the 19 January of the same year	2121-01-19	the NUM:$1 MONTH:$0 of the same year	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+the 19 January of that year	2121-01-19	the NUM:$1 MONTH:$0 of that year	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+the 19th January of the same year	2121-01-19	the ORD:$1 MONTH:$0 of the same year	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+the 19th January of that year	2121-01-19	the ORD:$1 MONTH:$0 of that year	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+the 19 of January of the same year	2121-01-19	the NUM:$1 of MONTH:$0 of the same year	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+the 19 of January of that year	2121-01-19	the NUM:$1 of MONTH:$0 of that year	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+the 19th of January of the same year	2121-01-19	the ORD:$1 of MONTH:$0 of the same year	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+the 19th of January of that year	2121-01-19	the ORD:$1 of MONTH:$0 of that year	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+###	date_r3
+Friday October 13	2121-10-13	WEEK:$2 MONTH:$0 NUM:$1	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+Friday, October 13	2121-10-13	WEEK:$2 , MONTH:$0 NUM:$1	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+Friday October 13th	2121-10-13	WEEK:$2 MONTH:$0 ORD:$1	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+Friday, October 13th	2121-10-13	WEEK:$2 , MONTH:$0 ORD:$1	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+Friday October 13 2009	2009-10-13	WEEK:$3 MONTH:$1 NUM:$2 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+Friday, October 13 2009	2009-10-13	WEEK:$3 , MONTH:$1 NUM:$2 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+Friday October 13th 2009	2009-10-13	WEEK:$3 MONTH:$1 ORD:$2 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+Friday, October 13th 2009	2009-10-13	WEEK:$3 , MONTH:$1 ORD:$2 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+Friday October 13, 2009	2009-10-13	WEEK:$3 MONTH:$1 NUM:$2 , YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+Friday, October 13, 2009	2009-10-13	WEEK:$3 , MONTH:$1 NUM:$2 , YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+Friday October 13th, 2009	2009-10-13	WEEK:$3 MONTH:$1 ORD:$2 , YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+Friday, October 13th, 2009	2009-10-13	WEEK:$3 , MONTH:$1 ORD:$2 , YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day	POINT
+###	date_r5
+tomorrow	2121-03-04	tomorrow	Action:ToNext TimeUnit:Day	POINT
+yesterday	2121-03-02	yesterday	Action:ToLast TimeUnit:Day	POINT
+the day before yesterday	2121-03-01	the day before yesterday	Action:Backward Value:2 TimeUnit:Day	POINT
+today	2121-03-03	today	Action:Equal TimeUnit:Day	POINT
+the day after tomorrow	2121-03-05	the day after tomorrow	Action:Forward Value:2 TimeUnit:Day	POINT
+now	PRESENT_REF	NOW	Action:Ref Direction:Present	REF
+as soon as possible	FUTURE_REF	as soon as possible	Action:Ref Direction:Future	REF
+recent	PAST_REF	PAST	Action:Ref Direction:Past	REF
+at the time	PAST_REF	at the time	Action:Ref Direction:Past	REF
+current	PRESENT_REF	THIS	Action:Ref Direction:Present	REF
+early tomorrow	2121-03-04	PART_WORD tomorrow	Action:ToNext TimeUnit:Day	POINT
+early yesterday	2121-03-02	PART_WORD yesterday	Action:ToLast TimeUnit:Day	POINT
+early the day before yesterday	2121-03-01	PART_WORD the day before yesterday	Action:Backward Value:2 TimeUnit:Day	POINT
+early today	2121-03-03	PART_WORD today	Action:Equal TimeUnit:Day	POINT
+early the day after tomorrow	2121-03-05	PART_WORD the day after tomorrow	Action:Forward Value:2 TimeUnit:Day	POINT
+early now	PRESENT_REF	PART_WORD NOW	Action:Ref Direction:Present	REF
+early as soon as possible	FUTURE_REF	PART_WORD as soon as possible	Action:Ref Direction:Future	REF
+early recent	PAST_REF	PART_WORD PAST	Action:Ref Direction:Past	REF
+early current	PRESENT_REF	PART_WORD THIS	Action:Ref Direction:Present	REF
+Monday	2121-03-03	WEEK:$0	Action:Modify* Enum:$0	POINT
+early monday	2121-03-03	PART_WORD WEEK:$0	Action:Modify* Enum:$0	POINT
+###	date_r6
+the weekend	2121-W10-WE	the WEEK:$0	Action:Modify* Enum:$0	POINT
+that weekend	2121-W10-WE	that WEEK:$0	Action:Modify* Enum:$0	POINT
+###	month granularity
+###	date_r7
+November 2001	2001-11	MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1	POINT
+February of 1999	1999-02	MONTH:$1 of YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1	POINT
+###	date_r8
+November next year	2122-11	MONTH:$1 NEXT TIME_UNIT:$0	Action:ToNext TimeUnit:$0 Action:Modify* Enum:$1	POINT
+November the next year	2122-11	MONTH:$1 the Next TIME_UNIT:$0	Action:ToNext TimeUnit:$0 Action:Modify* Enum:$1	POINT
+May last year	2120-05	MONTH:$1 LAST TIME_UNIT:$0	Action:ToLast TimeUnit:$0 Action:Modify* Enum:$1	POINT
+May the last year	2120-05	MONTH:$1 the LAST TIME_UNIT:$0	Action:ToLast TimeUnit:$0 Action:Modify* Enum:$1	POINT
+may this year	2121-05	MONTH:$0 THIS year	Action:Modify* Enum:$0	POINT
+may the current year	2121-05	MONTH:$0 the THIS year	Action:Modify* Enum:$0	POINT
+may of that year	2121-05	MONTH:$0 of that year	Action:Modify* Enum:$0	POINT
+may of the same year	2121-05	MONTH:$0 of the same year	Action:Modify* Enum:$0	POINT
+###	season granularity
+###	date_r9
+summer	2121-SU	SEASON:$0	Action:Modify* Enum:$0	POINT
+early summer	2121-SU	PART_WORD SEASON:$0	Action:Modify* Enum:$0	POINT
+the summer	2121-SU	the SEASON:$0	Action:Modify* Enum:$0	POINT
+winter 2001	2001-WI	SEASON:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1	POINT
+winter of 2001	2001-WI	SEASON:$1 of YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1	POINT
+the winter 2001	2001-WI	the SEASON:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1	POINT
+the winter of 2001	2001-WI	the SEASON:$1 of YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1	POINT
+early winter 2001	2001-WI	PART_WORD SEASON:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1	POINT
+early winter of 2001	2001-WI	PART_WORD SEASON:$1 of YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1	POINT
+winter 01	2101-WI	SEASON:$1 NUM:$0	Action:BasicModify Value:$0 TimeUnit:Year TimeUnit:Century Action:Modify* Enum:$1	POINT
+summer of 69	2169-SU	SEASON:$1 of NUM:$0	Action:BasicModify Value:$0 TimeUnit:Year TimeUnit:Century Action:Modify* Enum:$1	POINT
+the winter 01	2101-WI	the SEASON:$1 NUM:$0	Action:BasicModify Value:$0 TimeUnit:Year TimeUnit:Century Action:Modify* Enum:$1	POINT
+the summer of 69	2169-SU	the SEASON:$1 of NUM:$0	Action:BasicModify Value:$0 TimeUnit:Year TimeUnit:Century Action:Modify* Enum:$1	POINT
+early winter 01	2101-WI	PART_WORD SEASON:$1 NUM:$0	Action:BasicModify Value:$0 TimeUnit:Year TimeUnit:Century Action:Modify* Enum:$1	POINT
+early summer of 69	2169-SU	PART_WORD SEASON:$1 of NUM:$0	Action:BasicModify Value:$0 TimeUnit:Year TimeUnit:Century Action:Modify* Enum:$1	POINT
+###	part of year granularity
+###	date_r10
+the third quarter of 2001	2001-Q3	the ORD:$1 TIME_UNIT:$2 of YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:BasicModify Value:$1 TimeUnit:$2	POINT
+the third quarter 2001	2001-Q3	the ORD:$1 TIME_UNIT:$2 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:BasicModify Value:$1 TimeUnit:$2	POINT
+third quarter of 2001	2001-Q3	ORD:$1 TIME_UNIT:$2 of YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:BasicModify Value:$1 TimeUnit:$2	POINT
+third quarter 2001	2001-Q3	ORD:$1 TIME_UNIT:$2 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:BasicModify Value:$1 TimeUnit:$2	POINT
+second half	2121-H2	ORD:$0 TIME_UNIT:$1	Action:BasicModify Value:$0 TimeUnit:$1	POINT
+the second quarter	2121-Q2	the ORD:$0 TIME_UNIT:$1	Action:BasicModify Value:$0 TimeUnit:$1	POINT
+the 2001 third quarter	2001-Q3	the YEAR:$0 ORD:$1 TIME_UNIT:$2	Action:BasicModify Value:$0 TimeUnit:Year Action:BasicModify Value:$1 TimeUnit:$2	POINT
+2001 third quarter	2001-Q3	YEAR:$0 ORD:$1 TIME_UNIT:$2	Action:BasicModify Value:$0 TimeUnit:Year Action:BasicModify Value:$1 TimeUnit:$2	POINT
+###	date_r11
+this year's third quarter	2121-Q3	THIS TIME_UNIT:$0 's ORD:$1 TIME_UNIT:$2	Action:Equal TimeUnit:$0 Action:BasicModify Value:$1 TimeUnit:$2	POINT
+next year's first quarter	2122-Q1	NEXT TIME_UNIT:$0 's ORD:$1 TIME_UNIT:$2	Action:ToNext TimeUnit:$0 Action:BasicModify Value:$1 TimeUnit:$2	POINT
+last year's first quarter	2120-Q1	LAST TIME_UNIT:$0 's ORD:$1 TIME_UNIT:$2	Action:ToLast TimeUnit:$0 Action:BasicModify Value:$1 TimeUnit:$2	POINT
+the year - earlier first half	2120-H1	the year - earlier ORD:$0 TIME_UNIT:$1	Action:ToLast TimeUnit:Year Action:BasicModify Value:$0 TimeUnit:$1	POINT
+the year - ago first half	2120-H1	the year - ago ORD:$0 TIME_UNIT:$1	Action:ToLast TimeUnit:Year Action:BasicModify Value:$0 TimeUnit:$1	POINT
+second half of this year	2121-H2	ORD:$0 TIME_UNIT:$1 of THIS year	Action:BasicModify Value:$0 TimeUnit:$1	POINT
+the second half of this year	2121-H2	the ORD:$0 TIME_UNIT:$1 of THIS year	Action:BasicModify Value:$0 TimeUnit:$1	POINT
+second half of next year	2122-H2	ORD:$1 TIME_UNIT:$2 of NEXT TIME_UNIT:$0	Action:ToNext TimeUnit:$0 Action:BasicModify Value:$1 TimeUnit:$2	POINT
+the second half of next year	2122-H2	the ORD:$1 TIME_UNIT:$2 of NEXT TIME_UNIT:$0	Action:ToNext TimeUnit:$0 Action:BasicModify Value:$1 TimeUnit:$2	POINT
+second half of last year	2120-H2	ORD:$1 TIME_UNIT:$2 of LAST TIME_UNIT:$0	Action:ToLast TimeUnit:$0 Action:BasicModify Value:$1 TimeUnit:$2	POINT
+the second half of last year	2120-H2	the ORD:$1 TIME_UNIT:$2 of LAST TIME_UNIT:$0	Action:ToLast TimeUnit:$0 Action:BasicModify Value:$1 TimeUnit:$2	POINT
+###	year granularity
+###	date_r12
+2009	2009	YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year	POINT
+the year two-thousand	2000	the TIME_UNIT:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:$1	POINT
+###	decade granularity
+###	date_r13
+the 90s	219	the DECADE:$0	Action:BasicModify Value:$0 TimeUnit:Decade TimeUnit:Century	POINT
+the nineteen___nineties	199	the compDECADE:$0	Action:BasicModify Value:$0 TimeUnit:Decade	POINT
+###	date_r14
+the early 1990s	199	the PART_WORD compDECADE:$0	Action:BasicModify Value:$0 TimeUnit:Decade	POINT
+the early 90s	219	the PART_WORD DECADE:$0	Action:BasicModify Value:$0 TimeUnit:Decade TimeUnit:Century	POINT
+###	century granularity
+###	granularity independent rules
+###	date_r16
+March	2121-03	MONTH:$0	Action:Modify* Enum:$0	POINT
+early 2001	2001	PART_WORD YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year	POINT
+the_beginning_of November 1999	1999-11	PART_WORD MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1	POINT
+the_middle_of September	2121-09	PART_WORD MONTH:$0	Action:Modify* Enum:$0	POINT
+###	date_r17
+next decade	P1DE	NEXT decade	Action:AddTo Value:1 TimeUnit:Decade	DURATION
+the next decade	P1DE	the NEXT decade	Action:AddTo Value:1 TimeUnit:Decade	DURATION
+last decade	P1DE	LAST decade	Action:AddTo Value:1 TimeUnit:Decade	DURATION
+the last decade	P1DE	the LAST decade	Action:AddTo Value:1 TimeUnit:Decade	DURATION
+this year	2121	THIS TIME_UNIT:$0	Action:Equal TimeUnit:$0	POINT
+the this year	2121	the THIS TIME_UNIT:$0	Action:Equal TimeUnit:$0	POINT
+next year	2122	NEXT TIME_UNIT:$0	Action:ToNext TimeUnit:$0	POINT
+the next year	2122	the NEXT TIME_UNIT:$0	Action:ToNext TimeUnit:$0	POINT
+last year	2120	LAST TIME_UNIT:$0	Action:ToLast TimeUnit:$0	POINT
+the last year	2120	the LAST TIME_UNIT:$0	Action:ToLast TimeUnit:$0	POINT
+this fiscal year	2121	THIS PART_WORD TIME_UNIT:$0	Action:Equal TimeUnit:$0	POINT
+next fiscal year	2122	NEXT PART_WORD TIME_UNIT:$0	Action:ToNext TimeUnit:$0	POINT
+the next fiscal year	2122	the NEXT PART_WORD TIME_UNIT:$0	Action:ToNext TimeUnit:$0	POINT
+the this fiscal year	2121	the THIS PART_WORD TIME_UNIT:$0	Action:Equal TimeUnit:$0	POINT
+this November	2121-11	THIS MONTH:$0	Action:Modify* Enum:$0	POINT
+next November	2122-11	NEXT MONTH:$0	Action:ToNext TimeUnit:Year Action:Modify* Enum:$0	POINT
+last November	2120-11	LAST MONTH:$0	Action:ToLast TimeUnit:Year Action:Modify* Enum:$0	POINT
+the this November	2121-11	the THIS MONTH:$0	Action:Modify* Enum:$0	POINT
+the next November	2122-11	the NEXT MONTH:$0	Action:ToNext TimeUnit:Year Action:Modify* Enum:$0	POINT
+the last November	2120-11	the LAST MONTH:$0	Action:ToLast TimeUnit:Year Action:Modify* Enum:$0	POINT
+this November 24	2121-11-24	THIS MONTH:$0 NUM:$1	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+next November 24	2122-11-24	NEXT MONTH:$0 NUM:$1	Action:ToNext TimeUnit:Year Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+last November 24	2120-11-24	LAST MONTH:$0 NUM:$1	Action:ToLast TimeUnit:Year Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+the this November 24	2121-11-24	the THIS MONTH:$0 NUM:$1	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+the next November 24	2122-11-24	the NEXT MONTH:$0 NUM:$1	Action:ToNext TimeUnit:Year Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+the last November 24	2120-11-24	the LAST MONTH:$0 NUM:$1	Action:ToLast TimeUnit:Year Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+this Monday	2121-03-03	THIS WEEK:$0	Action:Modify* Enum:$0	POINT
+next Monday	2121-03-10	NEXT WEEK:$0	Action:ToNext TimeUnit:Week Action:Modify* Enum:$0	POINT
+last Monday	2121-02-24	LAST WEEK:$0	Action:ToLast TimeUnit:Week Action:Modify* Enum:$0	POINT
+the this Monday	2121-03-03	the THIS WEEK:$0	Action:Modify* Enum:$0	POINT
+the next Monday	2121-03-10	the NEXT WEEK:$0	Action:ToNext TimeUnit:Week Action:Modify* Enum:$0	POINT
+the last Monday	2121-02-24	the LAST WEEK:$0	Action:ToLast TimeUnit:Week Action:Modify* Enum:$0	POINT
+this summer	2121-SU	THIS SEASON:$0	Action:Modify* Enum:$0	POINT
+next summer	2122-SU	NEXT SEASON:$0	Action:ToNext TimeUnit:Year Action:Modify* Enum:$0	POINT
+last summer	2120-SU	LAST SEASON:$0	Action:ToLast TimeUnit:Year Action:Modify* Enum:$0	POINT
+the this summer	2121-SU	the THIS SEASON:$0	Action:Modify* Enum:$0	POINT
+the next summer	2122-SU	the NEXT SEASON:$0	Action:ToNext TimeUnit:Year Action:Modify* Enum:$0	POINT
+the last summer	2120-SU	the LAST SEASON:$0	Action:ToLast TimeUnit:Year Action:Modify* Enum:$0	POINT
+same year	2121	same TIME_UNIT:$0	Action:Equal TimeUnit:$0	POINT
+the same year	2121	the same TIME_UNIT:$0	Action:Equal TimeUnit:$0	POINT
+this same year	2121	this same TIME_UNIT:$0	Action:Equal TimeUnit:$0	POINT
+that same year	2121	that same TIME_UNIT:$0	Action:Equal TimeUnit:$0	POINT
+###	date_r18
+early this year	2121	PART_WORD THIS TIME_UNIT:$0	Action:Equal TimeUnit:$0	POINT
+the early this year	2121	the PART_WORD THIS TIME_UNIT:$0	Action:Equal TimeUnit:$0	POINT
+early next year	2122	PART_WORD NEXT TIME_UNIT:$0	Action:ToNext TimeUnit:$0	POINT
+the early next year	2122	the PART_WORD NEXT TIME_UNIT:$0	Action:ToNext TimeUnit:$0	POINT
+early last year	2120	PART_WORD LAST TIME_UNIT:$0	Action:ToLast TimeUnit:$0	POINT
+the early last year	2120	the PART_WORD LAST TIME_UNIT:$0	Action:ToLast TimeUnit:$0	POINT
+early this November	2121-11	PART_WORD THIS MONTH:$0	Action:Modify* Enum:$0	POINT
+early next November	2122-11	PART_WORD NEXT MONTH:$0	Action:ToNext TimeUnit:Year Action:Modify* Enum:$0	POINT
+early last November	2120-11	PART_WORD LAST MONTH:$0	Action:ToLast TimeUnit:Year Action:Modify* Enum:$0	POINT
+the early this November	2121-11	the PART_WORD THIS MONTH:$0	Action:Modify* Enum:$0	POINT
+the early next November	2122-11	the PART_WORD NEXT MONTH:$0	Action:ToNext TimeUnit:Year Action:Modify* Enum:$0	POINT
+the early last November	2120-11	the PART_WORD LAST MONTH:$0	Action:ToLast TimeUnit:Year Action:Modify* Enum:$0	POINT
+early this November 24	2121-11-24	PART_WORD THIS MONTH:$0 NUM:$1	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+early next November 24	2122-11-24	PART_WORD NEXT MONTH:$0 NUM:$1	Action:ToNext TimeUnit:Year Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+early last November 24	2120-11-24	PART_WORD LAST MONTH:$0 NUM:$1	Action:ToLast TimeUnit:Year Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+the early this November 24	2121-11-24	the PART_WORD THIS MONTH:$0 NUM:$1	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+the early next November 24	2122-11-24	the PART_WORD NEXT MONTH:$0 NUM:$1	Action:ToNext TimeUnit:Year Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+the early last November 24	2120-11-24	the PART_WORD LAST MONTH:$0 NUM:$1	Action:ToLast TimeUnit:Year Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day	POINT
+early this Monday	2121-03-03	PART_WORD THIS WEEK:$0	Action:Modify* Enum:$0	POINT
+early next Monday	2121-03-10	PART_WORD NEXT WEEK:$0	Action:ToNext TimeUnit:Week Action:Modify* Enum:$0	POINT
+early last Monday	2121-02-24	PART_WORD LAST WEEK:$0	Action:ToLast TimeUnit:Week Action:Modify* Enum:$0	POINT
+the early this Monday	2121-03-03	the PART_WORD THIS WEEK:$0	Action:Modify* Enum:$0	POINT
+the early next Monday	2121-03-10	the PART_WORD NEXT WEEK:$0	Action:ToNext TimeUnit:Week Action:Modify* Enum:$0	POINT
+the early last Monday	2121-02-24	the PART_WORD LAST WEEK:$0	Action:ToLast TimeUnit:Week Action:Modify* Enum:$0	POINT
+early this summer	2121-SU	PART_WORD THIS SEASON:$0	Action:Modify* Enum:$0	POINT
+early next summer	2122-SU	PART_WORD NEXT SEASON:$0	Action:ToNext TimeUnit:Year Action:Modify* Enum:$0	POINT
+early last summer	2120-SU	PART_WORD LAST SEASON:$0	Action:ToLast TimeUnit:Year Action:Modify* Enum:$0	POINT
+the early this summer	2121-SU	the PART_WORD THIS SEASON:$0	Action:Modify* Enum:$0	POINT
+the early next summer	2122-SU	the PART_WORD NEXT SEASON:$0	Action:ToNext TimeUnit:Year Action:Modify* Enum:$0	POINT
+the early last summer	2120-SU	the PART_WORD LAST SEASON:$0	Action:ToLast TimeUnit:Year Action:Modify* Enum:$0	POINT
+###	date_r19
+several months ago	PAST_REF	several TIME_UNIT:$0 ago	Action:Ref Direction:Past	REF
+a couple of months ago	PAST_REF	a_couple_of TIME_UNIT:$0 ago	Action:Ref Direction:Past	REF
+some months ago	PAST_REF	some TIME_UNIT:$0 ago	Action:Ref Direction:Past	REF
+a few months ago	PAST_REF	a_few TIME_UNIT:$0 ago	Action:Ref Direction:Past	REF
+many months ago	PAST_REF	many TIME_UNIT:$0 ago	Action:Ref Direction:Past	REF
+about several months ago	PAST_REF	INEQ several TIME_UNIT:$0 ago	Action:Ref Direction:Past	REF
+about a couple of months ago	PAST_REF	INEQ a_couple_of TIME_UNIT:$0 ago	Action:Ref Direction:Past	REF
+about some months ago	PAST_REF	INEQ some TIME_UNIT:$0 ago	Action:Ref Direction:Past	REF
+about a few months ago	PAST_REF	INEQ a_few TIME_UNIT:$0 ago	Action:Ref Direction:Past	REF
+about many months ago	PAST_REF	INEQ many TIME_UNIT:$0 ago	Action:Ref Direction:Past	REF
+several months or so ago	PAST_REF	several TIME_UNIT:$0 or so ago	Action:Ref Direction:Past	REF
+a couple of months or so ago	PAST_REF	a_couple_of TIME_UNIT:$0 or so ago	Action:Ref Direction:Past	REF
+some months or so ago	PAST_REF	some TIME_UNIT:$0 or so ago	Action:Ref Direction:Past	REF
+a few months or so ago	PAST_REF	a_few TIME_UNIT:$0 or so ago	Action:Ref Direction:Past	REF
+many months or so ago	PAST_REF	many TIME_UNIT:$0 or so ago	Action:Ref Direction:Past	REF
+about several months or so ago	PAST_REF	INEQ several TIME_UNIT:$0 or so ago	Action:Ref Direction:Past	REF
+about a couple of months or so ago	PAST_REF	INEQ a_couple_of TIME_UNIT:$0 or so ago	Action:Ref Direction:Past	REF
+about some months or so ago	PAST_REF	INEQ some TIME_UNIT:$0 or so ago	Action:Ref Direction:Past	REF
+about a few months or so ago	PAST_REF	INEQ a_few TIME_UNIT:$0 or so ago	Action:Ref Direction:Past	REF
+about many months or so ago	PAST_REF	INEQ many TIME_UNIT:$0 or so ago	Action:Ref Direction:Past	REF
+several months or more or more ago	PAST_REF	several TIME_UNIT:$0 or more ago	Action:Ref Direction:Past	REF
+a couple of months or more ago	PAST_REF	a_couple_of TIME_UNIT:$0 or more ago	Action:Ref Direction:Past	REF
+some months or more ago	PAST_REF	some TIME_UNIT:$0 or more ago	Action:Ref Direction:Past	REF
+a few months or more ago	PAST_REF	a_few TIME_UNIT:$0 or more ago	Action:Ref Direction:Past	REF
+many months or more ago	PAST_REF	many TIME_UNIT:$0 or more ago	Action:Ref Direction:Past	REF
+about several months or more ago	PAST_REF	INEQ several TIME_UNIT:$0 or more ago	Action:Ref Direction:Past	REF
+about a couple of months or more ago	PAST_REF	INEQ a_couple_of TIME_UNIT:$0 or more ago	Action:Ref Direction:Past	REF
+about some months or more ago	PAST_REF	INEQ some TIME_UNIT:$0 or more ago	Action:Ref Direction:Past	REF
+about a few months or more ago	PAST_REF	INEQ a_few TIME_UNIT:$0 or more ago	Action:Ref Direction:Past	REF
+about many months or more ago	PAST_REF	INEQ many TIME_UNIT:$0 or more ago	Action:Ref Direction:Past	REF
+several months earlier	PAST_REF	several TIME_UNIT:$0 earlier	Action:Ref Direction:Past	REF
+a couple of months earlier	PAST_REF	a_couple_of TIME_UNIT:$0 earlier	Action:Ref Direction:Past	REF
+some months earlier	PAST_REF	some TIME_UNIT:$0 earlier	Action:Ref Direction:Past	REF
+a few months earlier	PAST_REF	a_few TIME_UNIT:$0 earlier	Action:Ref Direction:Past	REF
+many months earlier	PAST_REF	many TIME_UNIT:$0 earlier	Action:Ref Direction:Past	REF
+about several months earlier	PAST_REF	INEQ several TIME_UNIT:$0 earlier	Action:Ref Direction:Past	REF
+about a couple of months earlier	PAST_REF	INEQ a_couple_of TIME_UNIT:$0 earlier	Action:Ref Direction:Past	REF
+about some months earlier	PAST_REF	INEQ some TIME_UNIT:$0 earlier	Action:Ref Direction:Past	REF
+about a few months earlier	PAST_REF	INEQ a_few TIME_UNIT:$0 earlier	Action:Ref Direction:Past	REF
+about many months earlier	PAST_REF	INEQ many TIME_UNIT:$0 earlier	Action:Ref Direction:Past	REF
+several months or so earlier	PAST_REF	several TIME_UNIT:$0 or so earlier	Action:Ref Direction:Past	REF
+a couple of months or so earlier	PAST_REF	a_couple_of TIME_UNIT:$0 or so earlier	Action:Ref Direction:Past	REF
+some months or so earlier	PAST_REF	some TIME_UNIT:$0 or so earlier	Action:Ref Direction:Past	REF
+a few months or so earlier	PAST_REF	a_few TIME_UNIT:$0 or so earlier	Action:Ref Direction:Past	REF
+many months or so earlier	PAST_REF	many TIME_UNIT:$0 or so earlier	Action:Ref Direction:Past	REF
+about several months or so earlier	PAST_REF	INEQ several TIME_UNIT:$0 or so earlier	Action:Ref Direction:Past	REF
+about a couple of months or so earlier	PAST_REF	INEQ a_couple_of TIME_UNIT:$0 or so earlier	Action:Ref Direction:Past	REF
+about some months or so earlier	PAST_REF	INEQ some TIME_UNIT:$0 or so earlier	Action:Ref Direction:Past	REF
+about a few months or so earlier	PAST_REF	INEQ a_few TIME_UNIT:$0 or so earlier	Action:Ref Direction:Past	REF
+about many months or so earlier	PAST_REF	INEQ many TIME_UNIT:$0 or so earlier	Action:Ref Direction:Past	REF
+several months or more or more earlier	PAST_REF	several TIME_UNIT:$0 or more earlier	Action:Ref Direction:Past	REF
+a couple of months or more earlier	PAST_REF	a_couple_of TIME_UNIT:$0 or more earlier	Action:Ref Direction:Past	REF
+some months or more earlier	PAST_REF	some TIME_UNIT:$0 or more earlier	Action:Ref Direction:Past	REF
+a few months or more earlier	PAST_REF	a_few TIME_UNIT:$0 or more earlier	Action:Ref Direction:Past	REF
+many months or more earlier	PAST_REF	many TIME_UNIT:$0 or more earlier	Action:Ref Direction:Past	REF
+about several months or more earlier	PAST_REF	INEQ several TIME_UNIT:$0 or more earlier	Action:Ref Direction:Past	REF
+about a couple of months or more earlier	PAST_REF	INEQ a_couple_of TIME_UNIT:$0 or more earlier	Action:Ref Direction:Past	REF
+about some months or more earlier	PAST_REF	INEQ some TIME_UNIT:$0 or more earlier	Action:Ref Direction:Past	REF
+about a few months or more earlier	PAST_REF	INEQ a_few TIME_UNIT:$0 or more earlier	Action:Ref Direction:Past	REF
+about many months or more earlier	PAST_REF	INEQ many TIME_UNIT:$0 or more earlier	Action:Ref Direction:Past	REF
+recent years	PAST_REF	recent TIME_UNIT:$0	Action:Ref Direction:Past	REF
+###	date_r20
+several months later	FUTURE_REF	several TIME_UNIT:$0 later	Action:Ref Direction:Future	REF
+a couple of months later	FUTURE_REF	a_couple_of TIME_UNIT:$0 later	Action:Ref Direction:Future	REF
+some months later	FUTURE_REF	some TIME_UNIT:$0 later	Action:Ref Direction:Future	REF
+a few months later	FUTURE_REF	a_few TIME_UNIT:$0 later	Action:Ref Direction:Future	REF
+many months later	FUTURE_REF	many TIME_UNIT:$0 later	Action:Ref Direction:Future	REF
+about several months later	FUTURE_REF	INEQ several TIME_UNIT:$0 later	Action:Ref Direction:Future	REF
+about a couple of months later	FUTURE_REF	INEQ a_couple_of TIME_UNIT:$0 later	Action:Ref Direction:Future	REF
+about some months later	FUTURE_REF	INEQ some TIME_UNIT:$0 later	Action:Ref Direction:Future	REF
+about a few months later	FUTURE_REF	INEQ a_few TIME_UNIT:$0 later	Action:Ref Direction:Future	REF
+about many months later	FUTURE_REF	INEQ many TIME_UNIT:$0 later	Action:Ref Direction:Future	REF
+several months or so later	FUTURE_REF	several TIME_UNIT:$0 or so later	Action:Ref Direction:Future	REF
+a couple of months or so later	FUTURE_REF	a_couple_of TIME_UNIT:$0 or so later	Action:Ref Direction:Future	REF
+some months or so later	FUTURE_REF	some TIME_UNIT:$0 or so later	Action:Ref Direction:Future	REF
+a few months or so later	FUTURE_REF	a_few TIME_UNIT:$0 or so later	Action:Ref Direction:Future	REF
+many months or so later	FUTURE_REF	many TIME_UNIT:$0 or so later	Action:Ref Direction:Future	REF
+about several months or so later	FUTURE_REF	INEQ several TIME_UNIT:$0 or so later	Action:Ref Direction:Future	REF
+about a couple of months or so later	FUTURE_REF	INEQ a_couple_of TIME_UNIT:$0 or so later	Action:Ref Direction:Future	REF
+about some months or so later	FUTURE_REF	INEQ some TIME_UNIT:$0 or so later	Action:Ref Direction:Future	REF
+about a few months or so later	FUTURE_REF	INEQ a_few TIME_UNIT:$0 or so later	Action:Ref Direction:Future	REF
+about many months or so later	FUTURE_REF	INEQ many TIME_UNIT:$0 or so later	Action:Ref Direction:Future	REF
+several months or more or more later	FUTURE_REF	several TIME_UNIT:$0 or more later	Action:Ref Direction:Future	REF
+a couple of months or more later	FUTURE_REF	a_couple_of TIME_UNIT:$0 or more later	Action:Ref Direction:Future	REF
+some months or more later	FUTURE_REF	some TIME_UNIT:$0 or more later	Action:Ref Direction:Future	REF
+a few months or more later	FUTURE_REF	a_few TIME_UNIT:$0 or more later	Action:Ref Direction:Future	REF
+many months or more later	FUTURE_REF	many TIME_UNIT:$0 or more later	Action:Ref Direction:Future	REF
+about several months or more later	FUTURE_REF	INEQ several TIME_UNIT:$0 or more later	Action:Ref Direction:Future	REF
+about a couple of months or more later	FUTURE_REF	INEQ a_couple_of TIME_UNIT:$0 or more later	Action:Ref Direction:Future	REF
+about some months or more later	FUTURE_REF	INEQ some TIME_UNIT:$0 or more later	Action:Ref Direction:Future	REF
+about a few months or more later	FUTURE_REF	INEQ a_few TIME_UNIT:$0 or more later	Action:Ref Direction:Future	REF
+about many months or more later	FUTURE_REF	INEQ many TIME_UNIT:$0 or more later	Action:Ref Direction:Future	REF
+coming years	FUTURE_REF	coming TIME_UNIT:$0	Action:Ref Direction:Future	REF
+###	date_r21-22
+a year later	2122	NUM:$0 TIME_UNIT:$1 later	Action:Forward Value:$0 TimeUnit:$1	POINT
+a year earlier	2120	NUM:$0 TIME_UNIT:$1 earlier	Action:Backward Value:$0 TimeUnit:$1	POINT
+a year ago	2120	NUM:$0 TIME_UNIT:$1 ago	Action:Backward Value:$0 TimeUnit:$1	POINT
+about a year later	2122	INEQ NUM:$0 TIME_UNIT:$1 later	Action:Forward Value:$0 TimeUnit:$1	POINT
+about a year earlier	2120	INEQ NUM:$0 TIME_UNIT:$1 earlier	Action:Backward Value:$0 TimeUnit:$1	POINT
+about a year ago	2120	INEQ NUM:$0 TIME_UNIT:$1 ago	Action:Backward Value:$0 TimeUnit:$1	POINT
+###	date_r23
+year - earlier first half	2120-H1	year - earlier ORD:$0 TIME_UNIT:$1	Action:ToLast TimeUnit:Year Action:BasicModify Value:$0 TimeUnit:$1	POINT
+year - ago first half	2120-H1	year - ago ORD:$0 TIME_UNIT:$1	Action:ToLast TimeUnit:Year Action:BasicModify Value:$0 TimeUnit:$1	POINT
+the year - ago half	2120-H1	the year - ago TIME_UNIT:$0	Action:ToLast TimeUnit:Year Action:Equal TimeUnit:$0	POINT
+that year - ago half	2120-H1	that year - ago TIME_UNIT:$0	Action:ToLast TimeUnit:Year Action:Equal TimeUnit:$0	POINT
+the year - earlier half	2120-H1	the year - earlier TIME_UNIT:$0	Action:ToLast TimeUnit:Year Action:Equal TimeUnit:$0	POINT
+that year - earlier half	2120-H1	that year - earlier TIME_UNIT:$0	Action:ToLast TimeUnit:Year Action:Equal TimeUnit:$0	POINT
+the year	2121	the TIME_UNIT:$0	Action:Equal TimeUnit:$0	POINT
+that year	2121	that TIME_UNIT:$0	Action:Equal TimeUnit:$0	POINT

@@ -1,0 +1,28 @@
+text	result	texPattern	valuePattern	form
+###	every unit
+###	set_r1
+each day	P1D	each TIME_UNIT:$0	Action:AddTo Value:1 TimeUnit:$0	DURATION
+every day	P1D	every TIME_UNIT:$0	Action:AddTo Value:1 TimeUnit:$0	DURATION
+every Monday	XXXX-WXX-1	every WEEK:$0	Action:MakeSet TimeUnit:Week Action:Modify* Enum:$0	POINT
+each Monday	XXXX-WXX-1	each WEEK:$0	Action:MakeSet TimeUnit:Week Action:Modify* Enum:$0	POINT
+every summer	XXXX-SU	every SEASON:$0	Action:MakeSet TimeUnit:Year Action:Modify* Enum:$0	POINT
+each summer	XXXX-SU	each SEASON:$0	Action:MakeSet TimeUnit:Year Action:Modify* Enum:$0	POINT
+each September	XXXX-09	each MONTH:$0	Action:MakeSet TimeUnit:Year Action:Modify* Enum:$0	POINT
+every September	XXXX-09	every MONTH:$0	Action:MakeSet TimeUnit:Year Action:Modify* Enum:$0	POINT
+###	set_r2
+once a week	P1W	once NUM:$0 TIME_UNIT:$1	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+once per week	P1W	once per TIME_UNIT:$0	Action:AddTo Value:1 TimeUnit:$0	DURATION
+twice a month	P1M	twice NUM:$0 TIME_UNIT:$1	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+twice per month	P1M	twice per TIME_UNIT:$1	Action:AddTo Value:1 TimeUnit:$0	DURATION
+three times a month	P1M	NUM:$2 time NUM:$0 TIME_UNIT:$1	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+three times per month	P1M	NUM:$1 time per TIME_UNIT:$0	Action:AddTo Value:1 TimeUnit:$0	DURATION
+a month	P1M	NUM:$0 TIME_UNIT:$1	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+a - minute	PT1M	NUM:$0 - TIME_UNIT:$1	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+###	set_r3
+every 5 years	P5Y	every NUM:$0 TIME_UNIT:$1	Action:AddTo Value:$0 TimeUnit:$1	DURATION
+###	set_r4
+2 days each week	P1W	NUM:$2 TIME_UNIT:$1 each TIME_UNIT:$0	Action:AddTo Value:1 TimeUnit:$0	DURATION
+2 days per week	P1W	NUM:$2 TIME_UNIT:$1 per TIME_UNIT:$0	Action:AddTo Value:1 TimeUnit:$0	DURATION
+###	set_r5
+annually	XXXX	annually	Action:MakeSet TimeUnit:Year	POINT
+monthly	XXXX-XX	monthly	Action:MakeSet TimeUnit:Month	POINT

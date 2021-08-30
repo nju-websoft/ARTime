@@ -1,0 +1,110 @@
+text	result	texPattern	valuePattern	form
+###	timestamp style
+###	time_r1
+2009 - 12 - 19 17 : 00 : 00	2009-12-19T17:00:00	YEAR:$0 - NUM:$1 - NUM:$2 NUM:$3 : NUM:$4 : NUM:$5	Action:BasicModify Value:$0 TimeUnit:Year Action:BasicModify Value:$1 TimeUnit:Month Action:BasicModify Value:$2 TimeUnit:Day Action:BasicModify Value:$3 TimeUnit:Hour Action:BasicModify Value:$4 TimeUnit:Minute Action:BasicModify Value:$5 TimeUnit:Second	POINT
+2009 - 12 - 19 17 : 00	2009-12-19T17:00	YEAR:$0 - NUM:$1 - NUM:$2 NUM:$3 : NUM:$4	Action:BasicModify Value:$0 TimeUnit:Year Action:BasicModify Value:$1 TimeUnit:Month Action:BasicModify Value:$2 TimeUnit:Day Action:BasicModify Value:$3 TimeUnit:Hour Action:BasicModify Value:$4 TimeUnit:Minute	POINT
+12 / 29 / 2000 20 : 29	2000-12-29T20:29	NUM:$1 / NUM:$2 / YEAR:$0 NUM:$3 : NUM:$4	Action:BasicModify Value:$0 TimeUnit:Year Action:BasicModify Value:$1 TimeUnit:Month Action:BasicModify Value:$2 TimeUnit:Day Action:BasicModify Value:$3 TimeUnit:Hour Action:BasicModify Value:$4 TimeUnit:Minute	POINT
+12 / 29 / 2000 20 : 29 : 29	2000-12-29T20:29:29	NUM:$1 / NUM:$2 / YEAR:$0 NUM:$3 : NUM:$4 : NUM:$5	Action:BasicModify Value:$0 TimeUnit:Year Action:BasicModify Value:$1 TimeUnit:Month Action:BasicModify Value:$2 TimeUnit:Day Action:BasicModify Value:$3 TimeUnit:Hour Action:BasicModify Value:$4 TimeUnit:Minute Action:BasicModify Value:$5 TimeUnit:Second	POINT
+###	time_r2
+###	TimeStamp style with timezone information
+###	PART-OF-DAY GRANULARITY
+###	time_r3
+midnight tuesday	2121-03-04TNI	DAY_TIME:$1 WEEK:$0	Action:Modify* Enum:$0 Action:Modify* Enum:$1	POINT
+tuesday afternoon	2121-03-04TAF	WEEK:$0 DAY_TIME:$1	Action:Modify* Enum:$0 Action:Modify* Enum:$1	POINT
+early tuesday afternoon	2121-03-04TAF	PART_WORD WEEK:$0 DAY_TIME:$1	Action:Modify* Enum:$0 Action:Modify* Enum:$1	POINT
+morning the day before yesterday	2121-03-01TMO	DAY_TIME:$0 the day before yesterday	Action:Backward Value:2 TimeUnit:Day Action:Modify* Enum:$0	POINT
+morning yesterday	2121-03-02TMO	DAY_TIME:$0 yesterday	Action:ToLast TimeUnit:Day Action:Modify* Enum:$0	POINT
+morning today	2121-03-03TMO	DAY_TIME:$0 today	Action:Equal TimeUnit:Day Action:Modify* Enum:$0	POINT
+morning tomorrow	2121-03-04TMO	DAY_TIME:$0 tomorrow	Action:ToNext TimeUnit:Day Action:Modify* Enum:$0	POINT
+morning the day after tomorrow	2121-03-05TMO	DAY_TIME:$0 the day after tomorrow	Action:Forward Value:2 TimeUnit:Day Action:Modify* Enum:$0	POINT
+the day before yesterday morning	2121-03-01TMO	the day before yesterday DAY_TIME:$0	Action:Backward Value:2 TimeUnit:Day Action:Modify* Enum:$0	POINT
+yesterday morning	2121-03-02TMO	yesterday DAY_TIME:$0	Action:ToLast TimeUnit:Day Action:Modify* Enum:$0	POINT
+today morning	2121-03-03TMO	today DAY_TIME:$0	Action:Equal TimeUnit:Day Action:Modify* Enum:$0	POINT
+tomorrow morning	2121-03-04TMO	tomorrow DAY_TIME:$0	Action:ToNext TimeUnit:Day Action:Modify* Enum:$0	POINT
+the day after tomorrow morning	2121-03-05TMO	the day after tomorrow DAY_TIME:$0	Action:Forward Value:2 TimeUnit:Day Action:Modify* Enum:$0	POINT
+early the day before yesterday morning	2121-03-01TMO	PART_WORD the day before yesterday DAY_TIME:$0	Action:Backward Value:2 TimeUnit:Day Action:Modify* Enum:$0	POINT
+early yesterday morning	2121-03-02TMO	PART_WORD yesterday DAY_TIME:$0	Action:ToLast TimeUnit:Day Action:Modify* Enum:$0	POINT
+early today morning	2121-03-03TMO	PART_WORD today DAY_TIME:$0	Action:Equal TimeUnit:Day Action:Modify* Enum:$0	POINT
+early tomorrow morning	2121-03-04TMO	PART_WORD tomorrow DAY_TIME:$0	Action:ToNext TimeUnit:Day Action:Modify* Enum:$0	POINT
+early the day after tomorrow morning	2121-03-05TMO	PART_WORD the day after tomorrow DAY_TIME:$0	Action:Forward Value:2 TimeUnit:Day Action:Modify* Enum:$0	POINT
+last Friday morning	2121-02-28TMO	LAST WEEK:$0 DAY_TIME:$1	Action:ToLast TimeUnit:Week Action:Modify* Enum:$0 Action:Modify* Enum:$1	POINT
+this Friday morning	2121-03-07TMO	THIS WEEK:$0 DAY_TIME:$1	Action:Modify* Enum:$0 Action:Modify* Enum:$1	POINT
+next Friday morning	2121-03-14TMO	NEXT WEEK:$0 DAY_TIME:$1	Action:ToNext TimeUnit:Week Action:Modify* Enum:$0 Action:Modify* Enum:$1	POINT
+###	time_r4
+this afternoon	2121-03-03TAF	THIS DAY_TIME:$0	Action:Modify* Enum:$0	POINT
+next afternoon	2121-03-04TAF	NEXT DAY_TIME:$0	Action:ToNext TimeUnit:Day Action:Modify* Enum:$0	POINT
+last afternoon	2121-03-02TAF	LAST DAY_TIME:$0	Action:ToLast TimeUnit:Day Action:Modify* Enum:$0	POINT
+early this afternoon	2121-03-03TAF	PART_WORD THIS DAY_TIME:$0	Action:Modify* Enum:$0	POINT
+early next afternoon	2121-03-04TAF	PART_WORD NEXT DAY_TIME:$0	Action:ToNext TimeUnit:Day Action:Modify* Enum:$0	POINT
+early last afternoon	2121-03-02TAF	PART_WORD LAST DAY_TIME:$0	Action:ToLast TimeUnit:Day Action:Modify* Enum:$0	POINT
+tonight	2121-03-03TNI	DAY_TIME:$0	Action:Modify* Enum:$0	POINT
+###	timepoint granularity
+###	time_r5
+3 : 07 : 35	PT3H7M35S	NUM:$0 : NUM:$1 : NUM:$2	Action:AddTo Value:$0 TimeUnit:Hour Action:AddTo Value:$1 TimeUnit:Minute Action:AddTo Value:$2 TimeUnit:Second	DURATION
+9 a.m.	2121-03-03T09:00	NUM:$0 AM	Action:BasicModify Value:$0 TimeUnit:Hour Action:ToBegin TimeUnit:Minute	POINT
+circa 9 a.m.	2121-03-03T09:00	INEQ NUM:$0 AM	Action:BasicModify Value:$0 TimeUnit:Hour Action:ToBegin TimeUnit:Minute	POINT
+11 PM	2121-03-03T23:00	NUM:$0 PM	Action:BasicModify Value:2 TimeUnit:HalfD Action:BasicModify Value:$0 TimeUnit:Hour TimeUnit:HalfD Action:ToBegin TimeUnit:Minute	POINT
+circa 11 PM	2121-03-03T23:00	INEQ NUM:$0 PM	Action:BasicModify Value:2 TimeUnit:HalfD Action:BasicModify Value:$0 TimeUnit:Hour TimeUnit:HalfD Action:ToBegin TimeUnit:Minute	POINT
+9 : 30 a.m.	2121-03-03T09:30	NUM:$0 : NUM:$1 AM	Action:BasicModify Value:$0 TimeUnit:Hour Action:BasicModify Value:$1 TimeUnit:Minute	POINT
+circa 9 : 30 a.m.	2121-03-03T09:30	INEQ NUM:$0 : NUM:$1 AM	Action:BasicModify Value:$0 TimeUnit:Hour Action:BasicModify Value:$1 TimeUnit:Minute	POINT
+9 : 30 p.m.	2121-03-03T21:30	NUM:$0 : NUM:$1 PM	Action:BasicModify Value:2 TimeUnit:HalfD Action:BasicModify Value:$0 TimeUnit:Hour TimeUnit:HalfD Action:BasicModify Value:$1 TimeUnit:Minute	POINT
+circa 9 : 30 p.m.	2121-03-03T21:30	INEQ NUM:$0 : NUM:$1 PM	Action:BasicModify Value:2 TimeUnit:HalfD Action:BasicModify Value:$0 TimeUnit:Hour TimeUnit:HalfD Action:BasicModify Value:$1 TimeUnit:Minute	POINT
+10 : 30 : 34 a.m.	2121-03-03T10:30:34	NUM:$0 : NUM:$1 : NUM:$2 AM	Action:BasicModify Value:$0 TimeUnit:Hour Action:BasicModify Value:$1 TimeUnit:Minute Action:BasicModify Value:$2 TimeUnit:Second	POINT
+circa 10 : 30 : 34 a.m.	2121-03-03T10:30:34	INEQ NUM:$0 : NUM:$1 : NUM:$2 AM	Action:BasicModify Value:$0 TimeUnit:Hour Action:BasicModify Value:$1 TimeUnit:Minute Action:BasicModify Value:$2 TimeUnit:Second	POINT
+10 : 30 : 34 p.m.	2121-03-03T22:30:34	NUM:$0 : NUM:$1 : NUM:$2 PM	Action:BasicModify Value:2 TimeUnit:HalfD Action:BasicModify Value:$0 TimeUnit:Hour TimeUnit:HalfD Action:BasicModify Value:$1 TimeUnit:Minute Action:BasicModify Value:$2 TimeUnit:Second	POINT
+circa 10 : 30 : 34 p.m.	2121-03-03T22:30:34	INEQ NUM:$0 : NUM:$1 : NUM:$2 PM	Action:BasicModify Value:2 TimeUnit:HalfD Action:BasicModify Value:$0 TimeUnit:Hour TimeUnit:HalfD Action:BasicModify Value:$1 TimeUnit:Minute Action:BasicModify Value:$2 TimeUnit:Second	POINT
+###	time_r6
+###	time_r7
+###	time_r8
+morning of March 25 2021	2021-03-25TMO	DAY_TIME:$3 of MONTH:$1 NUM:$2 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+morning of March 25, 2021	2021-03-25TMO	DAY_TIME:$3 of MONTH:$1 NUM:$2 , YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+morning of March 25 2021, Thursday	2021-03-25TMO	DAY_TIME:$3 of MONTH:$1 NUM:$2 YEAR:$0 , WEEK:$4	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+morning of March 25, 2021, Thursday	2021-03-25TMO	DAY_TIME:$3 of MONTH:$1 NUM:$2 , YEAR:$0 , WEEK:$4	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+morning of March 25th 2021	2021-03-25TMO	DAY_TIME:$3 of MONTH:$1 ORD:$2 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+morning of March 25th, 2021	2021-03-25TMO	DAY_TIME:$3 of MONTH:$1 ORD:$2 , YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+morning of March 25th 2021, Thursday	2021-03-25TMO	DAY_TIME:$3 of MONTH:$1 ORD:$2 YEAR:$0 , WEEK:$4	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+morning of March 25th, 2021, Thursday	2021-03-25TMO	DAY_TIME:$3 of MONTH:$1 ORD:$2 , YEAR:$0 , WEEK:$4	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+the morning of March 25 2021	2021-03-25TMO	the DAY_TIME:$3 of MONTH:$1 NUM:$2 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+the morning of March 25, 2021	2021-03-25TMO	the DAY_TIME:$3 of MONTH:$1 NUM:$2 , YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+the morning of March 25 2021, Thursday	2021-03-25TMO	the DAY_TIME:$3 of MONTH:$1 NUM:$2 YEAR:$0 , WEEK:$4	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+the morning of March 25, 2021, Thursday	2021-03-25TMO	the DAY_TIME:$3 of MONTH:$1 NUM:$2 , YEAR:$0 , WEEK:$4	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+the morning of March 25th 2021	2021-03-25TMO	the DAY_TIME:$3 of MONTH:$1 ORD:$2 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+the morning of March 25th, 2021	2021-03-25TMO	the DAY_TIME:$3 of MONTH:$1 ORD:$2 , YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+the morning of March 25th 2021, Thursday	2021-03-25TMO	the DAY_TIME:$3 of MONTH:$1 ORD:$2 YEAR:$0 , WEEK:$4	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+the morning of March 25th, 2021, Thursday	2021-03-25TMO	the DAY_TIME:$3 of MONTH:$1 ORD:$2 , YEAR:$0 , WEEK:$4	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+morning of April 25	2121-04-25TMO	DAY_TIME:$2 of MONTH:$0 NUM:$1	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day Action:Modify* Enum:$2	POINT
+morning of April 25th	2121-04-25TMO	DAY_TIME:$2 of MONTH:$0 ORD:$1	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day Action:Modify* Enum:$2	POINT
+the morning of April 25	2121-04-25TMO	the DAY_TIME:$2 of MONTH:$0 NUM:$1	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day Action:Modify* Enum:$2	POINT
+the morning of April 25th	2121-04-25TMO	the DAY_TIME:$2 of MONTH:$0 ORD:$1	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day Action:Modify* Enum:$2	POINT
+morning of 20 April 2005	2005-04-20TMO	DAY_TIME:$3 of NUM:$2 MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+morning of twentieth April 2005	2005-04-20TMO	DAY_TIME:$3 of ORD:$2 MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+the morning of 20 April 2005	2005-04-20TMO	the DAY_TIME:$3 of NUM:$2 MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+the morning of twentieth April 2005	2005-04-20TMO	the DAY_TIME:$3 of ORD:$2 MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+morning of 20 of April 2005	2005-04-20TMO	DAY_TIME:$3 of NUM:$2 of MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+morning of twentieth of April 2005	2005-04-20TMO	DAY_TIME:$3 of ORD:$2 of MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+the morning of 20 of April 2005	2005-04-20TMO	the DAY_TIME:$3 of NUM:$2 of MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+the morning of twentieth of April 2005	2005-04-20TMO	the DAY_TIME:$3 of ORD:$2 of MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+morning of the 20 April 2005	2005-04-20TMO	DAY_TIME:$3 of the NUM:$2 MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+morning of the twentieth April 2005	2005-04-20TMO	DAY_TIME:$3 of the ORD:$2 MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+the morning of the 20 April 2005	2005-04-20TMO	the DAY_TIME:$3 of the NUM:$2 MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+the morning of the twentieth April 2005	2005-04-20TMO	the DAY_TIME:$3 of the ORD:$2 MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+morning of the 20 of April 2005	2005-04-20TMO	DAY_TIME:$3 of the NUM:$2 of MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+morning of the twentieth of April 2005	2005-04-20TMO	DAY_TIME:$3 of the ORD:$2 of MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+the morning of the 20 of April 2005	2005-04-20TMO	the DAY_TIME:$3 of the NUM:$2 of MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+the morning of the twentieth of April 2005	2005-04-20TMO	the DAY_TIME:$3 of the ORD:$2 of MONTH:$1 YEAR:$0	Action:BasicModify Value:$0 TimeUnit:Year Action:Modify* Enum:$1 Action:BasicModify Value:$2 TimeUnit:Day Action:Modify* Enum:$3	POINT
+morning of 20 April	2121-04-20TMO	DAY_TIME:$2 of NUM:$1 MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day Action:Modify* Enum:$2	POINT
+morning of twentieth April	2121-04-20TMO	DAY_TIME:$2 of ORD:$1 MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day Action:Modify* Enum:$2	POINT
+morning of the 20 April	2121-04-20TMO	DAY_TIME:$2 of the NUM:$1 MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day Action:Modify* Enum:$2	POINT
+morning of the twentieth April	2121-04-20TMO	DAY_TIME:$2 of the ORD:$1 MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day Action:Modify* Enum:$2	POINT
+morning of 20 of April	2121-04-20TMO	DAY_TIME:$2 of NUM:$1 of MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day Action:Modify* Enum:$2	POINT
+morning of twentieth of April	2121-04-20TMO	DAY_TIME:$2 of ORD:$1 of MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day Action:Modify* Enum:$2	POINT
+morning of the 20 of April	2121-04-20TMO	DAY_TIME:$2 of the NUM:$1 of MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day Action:Modify* Enum:$2	POINT
+morning of the twentieth of April	2121-04-20TMO	DAY_TIME:$2 of the ORD:$1 of MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day Action:Modify* Enum:$2	POINT
+the morning of 20 April	2121-04-20TMO	the DAY_TIME:$2 of NUM:$1 MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day Action:Modify* Enum:$2	POINT
+the morning of twentieth April	2121-04-20TMO	the DAY_TIME:$2 of ORD:$1 MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day Action:Modify* Enum:$2	POINT
+the morning of the 20 April	2121-04-20TMO	the DAY_TIME:$2 of the NUM:$1 MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day Action:Modify* Enum:$2	POINT
+the morning of the twentieth April	2121-04-20TMO	the DAY_TIME:$2 of the ORD:$1 MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day Action:Modify* Enum:$2	POINT
+the morning of 20 of April	2121-04-20TMO	the DAY_TIME:$2 of NUM:$1 of MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day Action:Modify* Enum:$2	POINT
+the morning of twentieth of April	2121-04-20TMO	the DAY_TIME:$2 of ORD:$1 of MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day Action:Modify* Enum:$2	POINT
+the morning of the 20 of April	2121-04-20TMO	the DAY_TIME:$2 of the NUM:$1 of MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day Action:Modify* Enum:$2	POINT
+the morning of the twentieth of April	2121-04-20TMO	the DAY_TIME:$2 of the ORD:$1 of MONTH:$0	Action:Modify* Enum:$0 Action:BasicModify Value:$1 TimeUnit:Day Action:Modify* Enum:$2	POINT

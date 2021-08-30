@@ -1,0 +1,33 @@
+<?xml version="1.0" ?><TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>WSJ_20130322_159</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="2013-03-22">March 22, 2013</TIMEX3></DCT>
+
+<TITLE>Netanyahu Apologizes to Turkey for Deadly Ship Raid</TITLE>
+
+
+
+<TEXT>
+
+Israeli Prime Minister Benjamin Netanyahu <EVENT class="OCCURRENCE" eid="e1">apologized</EVENT> on <TIMEX3 tid="t1" type="DATE" value="2013-03-22">Friday</TIMEX3> to Turkish Prime Minister Recep Tayyip Erdogan for a <EVENT class="OCCURRENCE" eid="e2">raid</EVENT> on a Turkish flotilla ship, a <EVENT class="OCCURRENCE" eid="e56">move</EVENT> that will <EVENT class="I_ACTION" eid="e3">help</EVENT> <EVENT class="OCCURRENCE" eid="e4">restore</EVENT> strained ties between the countries.
+
+The <EVENT class="OCCURRENCE" eid="e57">call</EVENT>, which <EVENT class="OCCURRENCE" eid="e5">happened</EVENT> as President Barack Obama <EVENT class="OCCURRENCE" eid="e6">wrapped</EVENT> up his first presidential <EVENT class="OCCURRENCE" eid="e7">visit</EVENT> to Israel, was an unexpected <EVENT class="OCCURRENCE" eid="e8">outcome</EVENT> from a Mideast <EVENT class="OCCURRENCE" eid="e9">trip</EVENT> that <EVENT class="I_STATE" eid="e10">seemed</EVENT> to <EVENT class="OCCURRENCE" eid="e11">yield</EVENT> few concrete steps.
+
+Mr. Netanyahu's office <EVENT class="REPORTING" eid="e12">confirmed</EVENT> that the Israeli leader, in a <EVENT class="OCCURRENCE" eid="e13">conversation</EVENT> with Mr. Erdogan, "<EVENT class="I_ACTION" eid="e14">agreed</EVENT> to <EVENT class="OCCURRENCE" eid="e15">restore</EVENT> normalization between Israel and Turkey, including the <EVENT class="OCCURRENCE" eid="e16">dispatch</EVENT> of ambassadors and the <EVENT class="OCCURRENCE" eid="e17">cancellation</EVENT> of legal steps against [Israeli Defense Forces] soldiers." Mr. Erdogan <EVENT class="OCCURRENCE" eid="e18">accepted</EVENT> the Israeli apology, the prime minister's office <EVENT class="REPORTING" eid="e19">said</EVENT>.
+
+Mr. Erdogan has long <EVENT class="I_ACTION" eid="e20">sought</EVENT> an apology for the <EVENT class="OCCURRENCE" eid="e21">raid</EVENT> in <TIMEX3 tid="t2" type="DATE" value="2010-05">May 2010</TIMEX3> on the Mavi Marmara, which was part of a flotilla that <EVENT class="I_ACTION" eid="e22">sought</EVENT> to <EVENT class="OCCURRENCE" eid="e23">break</EVENT> Israel's <EVENT class="OCCURRENCE" eid="e24">blockade</EVENT> of Gaza. An Israeli <EVENT class="OCCURRENCE" eid="e25">raid</EVENT> on the ship <EVENT class="ASPECTUAL" eid="e26">left</EVENT> nine passengers <EVENT class="STATE" eid="e58">dead</EVENT>, all of them Turkish or of Turkish descent.
+
+"In light of the Israeli <EVENT class="OCCURRENCE" eid="e27">investigation</EVENT> into the <EVENT class="OCCURRENCE" eid="e28">incident</EVENT>, which <EVENT class="REPORTING" eid="e29">pointed</EVENT> out several operational errors, Prime Minister Netanyahu <EVENT class="OCCURRENCE" eid="e31">apologized</EVENT> to the Turkish people for any <EVENT class="OCCURRENCE" eid="e59">errors</EVENT> that could have led to <EVENT class="OCCURRENCE" eid="e33">loss</EVENT> of life and <EVENT class="I_ACTION" eid="e34">agreed</EVENT> to <EVENT class="ASPECTUAL" eid="e35">complete</EVENT> the agreement on compensation," the statement <EVENT class="REPORTING" eid="e37">said</EVENT>.
+
+Mr. Netanyahu <EVENT class="REPORTING" eid="e38">told</EVENT> Mr. Erdogan that what <EVENT class="OCCURRENCE" eid="e39">happened</EVENT> on board the Mavi Marmara was "unintentional and Israel <EVENT class="OCCURRENCE" eid="e40">expresses</EVENT> regret over <EVENT class="OCCURRENCE" eid="e60">injuries</EVENT> and <EVENT class="OCCURRENCE" eid="e61">loss</EVENT> of life," according to the statement.
+
+Mr. Obama <EVENT class="REPORTING" eid="e42">said</EVENT> later at a news <EVENT class="OCCURRENCE" eid="e43">conference</EVENT> in Amman that he had <EVENT class="OCCURRENCE" eid="e44">spoken</EVENT> to both leaders over <TIMEX3 tid="t3" type="DURATION" value="P2Y">the past two years</TIMEX3> about how it was in the interests of both countries to <EVENT class="OCCURRENCE" eid="e45">restore</EVENT> normal relations.
+
+He <EVENT class="REPORTING" eid="e46">said</EVENT> he <EVENT class="OCCURRENCE" eid="e47">discussed</EVENT> the issue with Mr. Netanyahu during his <EVENT class="OCCURRENCE" eid="e48">visit</EVENT> to Israel <TIMEX3 tid="t2000" type="DATE" value="2013-W12">this week</TIMEX3>, and that they <EVENT class="I_ACTION" eid="e49">agreed</EVENT> the timing was <EVENT class="STATE" eid="e50">good</EVENT> for a <EVENT class="OCCURRENCE" eid="e51">discussion</EVENT> with the Turkish leader.
+
+The <EVENT class="OCCURRENCE" eid="e52">incident</EVENT> was a subject of <EVENT class="OCCURRENCE" eid="e53">talks</EVENT> between Mr. Netanyahu and President Barack Obama during the president's <EVENT class="OCCURRENCE" eid="e54">trip</EVENT> to Israel <TIMEX3 tid="t4" type="DATE" value="2013-W12">this week</TIMEX3>, officials <EVENT class="REPORTING" eid="e55">said</EVENT>.
+
+</TEXT>
+
+</TimeML>

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>test_108.tml</DOCID>
+<DCT><TIMEX3 tid="t0" type="DATE" value="2013-10-18" temporalFunction="false" functionInDocument="CREATION_TIME">2013-10-18</TIMEX3></DCT>
+<TEXT>
+Who's going to 'Anti-aging Yoga' with Prakash Singh Bisht 19-20 Oct at Chevron House? http://t.co/AOEfCGWaNs
+</TEXT>
+</TimeML>

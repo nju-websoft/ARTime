@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>test_3.tml</DOCID>
+<DCT><TIMEX3 tid="t0" type="DATE" value="2012-03-08" temporalFunction="false" functionInDocument="CREATION_TIME">2012-03-08</TIMEX3></DCT>
+<TEXT>
+#PureYogaSG-Want to take yr Hot Yoga to the next level? Join Copper's workshop next Fri @ Ngee Ann City. Register <TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>! http://t.co/Ze9DiAbp
+</TEXT>
+</TimeML>
