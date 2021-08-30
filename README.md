@@ -2,6 +2,7 @@
 Automatic Rule Generation for Time Expression Normalization (Findings of EMNLP, 2021)
 
 The codes is obtained in the 'software' directory.
+
 The 'evaluationResults.zip' file includes the main results of our paper.
 
 ## Citation ##
