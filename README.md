@@ -1,9 +1,11 @@
 # ARTime
 Automatic Rule Generation for Time Expression Normalization (Findings of EMNLP, 2021)
 
-//TODO
-## Citation ##
+The codes is obtained in the 'software' directory.
+The 'evaluationResults.zip' file includes the main results of our paper.
 
+## Citation ##
+//TODO
 
 ## Building ##
 ARTime is maven project built with IntelliJ IDEA. It runs with java-11 and scala-2.12.11. 
