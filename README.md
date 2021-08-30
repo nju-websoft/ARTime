@@ -3,7 +3,7 @@ Automatic Rule Generation for Time Expression Normalization (Findings of EMNLP, 
 
 The codes is obtained in the `software` directory.
 
-The `evaluationResults.zip` file includes the main results of our paper.
+The `evaluationResults.zip` file includes the main results reported in our paper.
 
 ## Citation ##
 //TODO
