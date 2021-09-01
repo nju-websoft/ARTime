@@ -1,6 +1,8 @@
 # ARTime
 Automatic Rule Generation for Time Expression Normalization (Findings of EMNLP, 2021)
 
+arXiv link: https://arxiv.org/abs/2108.13658
+
 The codes are obtained in the `software` directory.
 
 The `evaluationResults.zip` file includes the main results reported in our paper.
