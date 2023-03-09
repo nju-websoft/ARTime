@@ -1,0 +1,228 @@
+[{
+  "type":"TIME_UNIT",
+  "values":[{
+    "regex":"(?i)millennia",
+    "value":"TimeUnit:Millennium"
+  },{
+    "regex":"(?i)(era|century)",
+    "value":"TimeUnit:Century"
+  },{
+    "regex":"(?i)decade",
+    "value":"TimeUnit:Decade"
+  },{
+    "regex":"(?i)year",
+    "value":"TimeUnit:Year"
+  },{
+	"regex":"(?i)half",
+    "value":"TimeUnit:HalfY"
+  },{
+    "regex":"(?i)quarter",
+    "value":"TimeUnit:QuarterY"
+  },{
+    "regex":"(?i)month",
+    "value":"TimeUnit:Month"
+  },{
+    "regex":"(?i)week",
+    "value":"TimeUnit:Week"
+  },{
+    "regex":"(?i)day",
+    "value":"TimeUnit:Day"
+  },{
+    "regex":"(?i)hour",
+    "value":"TimeUnit:Hour"
+  },{
+    "regex":"(?i)minute",
+    "value":"TimeUnit:Minute"
+  },{
+    "regex":"(?i)seconds",
+    "value":"TimeUnit:Second"
+  }]
+},
+  {
+  "type":"MONTH",
+  "values":[{
+    "regex":"(?i)(January|Jan\\.?)",
+    "value":"Enum:January"
+  },{
+    "regex":"(?i)(February|Feb\\.?)",
+    "value":"Enum:February"
+  },{
+    "regex":"(?i)(March|Mar\\.?)",
+    "value":"Enum:March"
+  },{
+    "regex":"(?i)(April|Apr\\.?)",
+    "value":"Enum:April"
+  },{
+    "regex":"(?i)(May|May\\.?)",
+    "value":"Enum:May"
+  },{
+    "regex":"(?i)(June|Jun\\.?)",
+    "value":"Enum:June"
+  },{
+    "regex":"(?i)(July|Jul\\.?)",
+    "value":"Enum:July"
+  },{
+    "regex":"(?i)(August|Aug\\.?)",
+    "value":"Enum:August"
+  },{
+    "regex":"(?i)(September|Sept?\\.?)",
+    "value":"Enum:September"
+  },{
+    "regex":"(?i)(October|Oct\\.?)",
+    "value":"Enum:October"
+  },{
+    "regex":"(?i)(November|Nov\\.?)",
+    "value":"Enum:November"
+  },{
+    "regex":"(?i)(December|Dec\\.?)",
+    "value":"Enum:December"
+  }]
+},{
+  "type":"WEEK",
+  "values":[{
+    "regex":"(?i)(Monday|Mon\\.?)",
+    "value":"Enum:Monday"
+  },{
+    "regex":"(?i)(Tuesday|Tues?\\.?)",
+    "value":"Enum:Tuesday"
+  },{
+    "regex":"(?i)(Wednesday|Wed\\.?)",
+    "value":"Enum:Wednesday"
+  },{
+    "regex":"(?i)(Thursday|Thurs?\\.?)",
+    "value":"Enum:Thursday"
+  },{
+    "regex":"(?i)(Friday|Fri\\.?)",
+    "value":"Enum:Friday"
+  },{
+    "regex":"(?i)(Saturday|Sat\\.?)",
+    "value":"Enum:Saturday"
+  },{
+    "regex":"(?i)(Sunday|Sun\\.?)",
+    "value":"Enum:Sunday"
+  },{
+    "regex":"(?i)weekend",
+    "value":"Enum:Weekend"
+  }]
+},{
+  "type":"DAY_TIME",
+  "values":[{
+    "regex":"(?i)(morning|dawn|sunrise|sunup|daybreak)",
+    "value":"Enum:Morning"
+  },{
+    "regex":"(?i)(noon|midday|lunchtime)",
+    "value":"Enum:MidDay"
+  },{
+    "regex":"(?i)afternoon",
+    "value":"Enum:Afternoon"
+  },{
+    "regex":"(?i)(evening|dusk|twilight|sunset|sundown|dinnertime|suppertime)",
+    "value":"Enum:Evening"
+  },{
+    "regex":"(?i)(midnight|nighttime|night|overnight|tonight)",
+    "value":"Enum:Night"
+  },{
+    "regex":"(?i)(daytime)",
+    "value":"Enum:DayTime"
+  }]
+},
+{
+    "type": "SEASON",
+    "values": [
+      {
+        "regex": "(?i)(spring)",
+        "value": "Enum:Spring"
+      },
+      {
+        "regex": "(?i)(summer)",
+        "value": "Enum:Summer"
+      },
+      {
+        "regex": "(?i)(autumn|fall)",
+        "value": "Enum:Fall"
+      },
+      {
+        "regex": "(?i)(winter)",
+        "value": "Enum:Winter"
+      }
+    ]
+},
+{
+	"type":"LAST",
+	"values":[{
+		"regex":"(?i)(last|previous|past|latest)",
+		"value":"PlainText"
+  }]
+},
+{
+	"type":"THIS",
+	"values":[{
+		"regex":"(?i)(this|current)",
+		"value":"PlainText"
+	}]
+},
+{
+	"type":"NEXT",
+	"values":[{
+		"regex":"(?i)(next|following)",
+		"value":"PlainText"
+	}]
+},
+{
+	"type":"INEQ",
+	"values":[{
+		"regex":"(?i)(approximately|about|around|circa|a_mere)",
+		"value":"PlainText"
+	},
+	{
+		"regex":"(?i)(no_more_than|no_longer_than|at_most|up_to|less_than|nearly|almost|close_to)",
+		"value":"PlainText"
+	},
+	{
+		"regex":"(?i)(at_least|no_less_than|more_than|longer_than|over)",
+		"value":"PlainText"
+	}
+  ]
+},
+{
+	"type":"PAST",
+	"values":[{
+		"regex":"(?i)(recent|recently)",
+		"value":"PlainText"
+	}
+  ]
+},
+{
+	"type":"NOW",
+	"values":[{
+		"regex":"(?i)(right_now|now|currently)",
+		"value":"PlainText"
+	}
+  ]
+},
+{
+	"type":"PART_WORD",
+	"values":[{
+		"regex":"(?i)(the_middle_of|the_end_of|the_beginning_of|the_start_of|late|later|early|earlier|mid|fiscal)",
+		"value":"PlainText"
+	}
+  ]
+},
+{
+	"type":"AM",
+	"values":[{
+		"regex":"(?i)(am|a.m.)",
+		"value":"PlainText"
+	}
+  ]
+},
+{
+	"type":"PM",
+	"values":[{
+		"regex":"(?i)(pm|p.m.)",
+		"value":"PlainText"
+	}
+  ]
+}
+
+]
