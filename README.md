@@ -15,16 +15,9 @@ The `evaluationResults.zip` file includes the main results reported in our paper
       Chen, Jianhao  and
       Li, Jinmao  and
       Qu, Yuzhong",
-    editor = "Moens, Marie-Francine  and
-      Huang, Xuanjing  and
-      Specia, Lucia  and
-      Yih, Scott Wen-tau",
     booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2021",
     month = nov,
     year = "2021",
-    address = "Punta Cana, Dominican Republic",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2021.findings-emnlp.269",
     doi = "10.18653/v1/2021.findings-emnlp.269",
     pages = "3135--3144",
 }
