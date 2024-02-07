@@ -8,7 +8,27 @@ The codes are obtained in the `software` directory.
 The `evaluationResults.zip` file includes the main results reported in our paper.
 
 ## Citation ##
-//TODO
+```
+@inproceedings{ding-etal-2021-automatic-rule,
+    title = "Automatic rule generation for time expression normalization",
+    author = "Ding, Wentao  and
+      Chen, Jianhao  and
+      Li, Jinmao  and
+      Qu, Yuzhong",
+    editor = "Moens, Marie-Francine  and
+      Huang, Xuanjing  and
+      Specia, Lucia  and
+      Yih, Scott Wen-tau",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2021",
+    month = nov,
+    year = "2021",
+    address = "Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.findings-emnlp.269",
+    doi = "10.18653/v1/2021.findings-emnlp.269",
+    pages = "3135--3144",
+}
+```
 
 ## Building ##
 ARTime is maven project built with IntelliJ IDEA. It runs with java-11 and scala-2.12.11. 
